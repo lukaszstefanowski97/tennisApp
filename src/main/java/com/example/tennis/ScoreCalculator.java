@@ -36,9 +36,7 @@ public class ScoreCalculator {
         else if (score == 1) result = "Fifteen";
         else if (score == 2) result = "Thirty";
         else if (score == 3) result = "Forty";
-        else {
-
-        }
+    
         return result;
     }
 
@@ -68,6 +66,8 @@ public class ScoreCalculator {
             if (player1Score == 3) return "Deuce";
             return player1Result + "-All";
         }
+        
+        if (difference == 3 && sum = 3) return player1Result + "-" + player2Result;
 
         if (difference > 1 && player1Score > player2Score) return "Win for player 1";
         if (difference > 1 && player1Score < player2Score) return "Win for player 2";
